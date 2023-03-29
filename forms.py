@@ -4,5 +4,5 @@ from wtforms.validators import DataRequired
 
 
 class AddTaskForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired])
+    title = StringField('Search', validators=[DataRequired()])
     submit = SubmitField('Submit')

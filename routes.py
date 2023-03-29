@@ -10,7 +10,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/about', methods = ['GET', 'POST'])
+@app.route('/about', methods=['GET', 'POST'])
 def about():
     form = forms.AddTaskForm()
     if form.validate_on_submit():
