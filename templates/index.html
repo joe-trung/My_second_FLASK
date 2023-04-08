@@ -1,4 +1,14 @@
 {% extends "base.html" %}
 {% block main %}
-<p>Some content on the home page</p>
+<h1>TITLE LIST</h1>
+{% for task in tasks %}
+<div class="card">
+    <div class="card-body">
+        <h3>{{task.title}}</h3>
+        <p>Added on {{task.date}}</p>
+        <a href="#" class="btn btn-primary">Edit</a>
+        <a href="#" class="btn btn-dange">Delete</a>
+    </div>
+</div>
+{% endfor %}
 {% endblock main %}
